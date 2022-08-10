@@ -10,22 +10,19 @@
 # ##### 예시 데이터 생성
 
 # In[1]:
-
-
 import dash
 import dash_bootstrap_components as dbc
-import numpy as np
 import plotly.graph_objs as go
 from dash import Input, Output, dcc, html
 import json
 import os
 import folium
-import pandas as pd
 import plotly.express as px
 import plotly.offline as pyo
+import pandas as pd
 
 # 오프라인 모드로 변경...
-pyo.init_notebook_mode()
+#pyo.init_notebook_mode()
 
 template='plotly_white'
 
