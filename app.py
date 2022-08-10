@@ -210,7 +210,9 @@ fig10.update_yaxes(showline=True, linewidth=2, gridwidth=3, linecolor='white', g
 
 ## dash code
 
-app = dash.Dash(external_stylesheets=[dbc.themes.BOOTSTRAP])
+external_stylesheets=["assets/style.css"]
+
+app = dash.Dash(external_stylesheets=[dbc.themes.BOOTSTRAP], external_stylesheets=external_stylesheets)
 app.title = "인구감소지역 지원방안"
 server = app.server
 
